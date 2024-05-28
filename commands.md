@@ -1,5 +1,5 @@
 # build packages
-````
+```
 mvn -f producer package
 mvn -f processor package
 ```
@@ -9,7 +9,7 @@ mvn -f processor package
 ```
 mvn -f producer package -Dnative -Dquarkus.native.container-build=true
 mvn -f processor package -Dnative -Dquarkus.native.container-build=true
-````
+```
 
 # build docker images
 
@@ -25,4 +25,4 @@ docker build -f src/main/docker/Dockerfile.jvm -t joheiss/quarkus-kafka-producer
 ```
 export QUARKUS_MODE=native
 docker-compose up --build
-````
+```
